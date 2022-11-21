@@ -2,8 +2,8 @@
 // Series of npm packages that we will use to give our server useful functionality
 
 const express = require('express');
-const apiRoutes = require('./routes/apiRoutes.js');
-const htmlRoutes = require('./routes/htmlRoutes.js');
+const apiRoutes = require('./Develop/routes/apiRoutes');
+const htmlRoutes = require('./Develop/routes/htmlRoutes');
 
 // EXPRESS CONFIGURATION
 // This sets up the basic properties for our express server
@@ -15,10 +15,10 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
+app.use(express.static('./Develop/public'));
 
 // ROUTER
 // The below points our server to a series of "route" files.
@@ -30,5 +30,4 @@ app.use('/', htmlRoutes);
 // LISTENER
 // The below code effectively "starts" our server
 
-app.listen(PORT, () => 
-    console.log(`App listening on PORT: ${PORT}`));
+app.listen(PORT, () => console.log(`App listening on PORT: ${PORT}`));
