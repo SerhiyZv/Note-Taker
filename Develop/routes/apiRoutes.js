@@ -1,4 +1,4 @@
-const store = require('../Develop/db/store.js');
+const store = require('./Develop/db/store.js');
 const router = require('express').Router();
 
     router.get('/notes', (req, res) => {
