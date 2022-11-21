@@ -1,7 +1,8 @@
-const store = require('../db/store.js');
+const { router } = require('json-server');
 
-module.exports = (app) => {
-    app.get('/api/notes', (req, res) => {
+const store = require('express').Router();
+
+    router.get('/notes', (req, res) => {
 
         store
         .getNote()
@@ -11,23 +12,20 @@ module.exports = (app) => {
         .catch((err) => res.status(500).json(err));
     });
 
-    app.post('/api/notes', (req, res) => {
+    router.post('/api/notes', (req, res) => {
 
         store
         .addNote(req.body)
-        .then((note) => {
-            return res.json(note);
-        })
-        .catch((err) => res.status(500).json(err));
+        .then((note) => res.json(note))
+        .catch((err) => res.status(500).json(err))
     });
 
-    app.delete('/api/notes/:id', (req, res) => {
+    router.delete('/notes/:id', (req, res) => {
         
         store
         .removedNote(req.params.id)
-        .then(() => {
-            return res.json({ ok: true });
-        })
+        .then(() => res.json({ ok: true }))
         .catch((err) => res.status(500).json(err));
     });
-};
+
+module.exports = router;
