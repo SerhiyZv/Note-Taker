@@ -19,7 +19,6 @@ const writeFile = data => {return writeFileAsync('./Develop/db/db.json', JSON.st
     });
 
     router.post('/notes', (req, res) => {
-        
         addNotes(req.body)
         .then((note) => res.json(note))
         .catch((err) => res.status(500).json(err))
