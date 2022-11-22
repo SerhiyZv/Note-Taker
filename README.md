@@ -4,11 +4,11 @@
 
 ## table of Contents
 
-* [Project Overview](#Project%20Overview)
-* [Technology used](#Technilogy%20used)
-* [Live Application](#Live%20Application)
-* [Screenshots](#Screenshots)
-* [License](#License)
+* [Project Overview](##Project%20Overview)
+* [Technology used](##Technilogy%20used)
+* [Live Application](##Live%20Application)
+* [Screenshots](##Screenshots)
+* [License](##License)
 
 ## Project Overview
 
@@ -32,8 +32,8 @@ When a new note is created, it will generate on the far left pane of the applica
 
 ## Screenshots
 
-![Screenshot01](./Develop/public/assets/images/Screenshot01.jpg)
 ![Screenshot02](./Develop/public/assets/images/Screenshot02.jpg)
+![Screenshot01](./Develop/public/assets/images/Screenshot01.jpg)
 
 ## License
 
