@@ -4,19 +4,19 @@
 
 ## table of Contents
 
-* [Project Overview](##Project%20Overview)
-* [Technology used](##Technilogy%20used)
-* [Live Application](##Live%20Application)
-* [Screenshots](##Screenshots)
-* [License](##License)
+* [Description](#Description)
+* [Technology](#Technology)
+* [Live Application](#Live%20Application)
+* [Screenshots](#Screenshots)
+* [License](#License)
 
-## Project Overview
+## Description
 
 This is a Note-Taker application that allows the user to input, save, and delete a note. The note must contain a title and text in order for the note to be saved. To write a new note, simply click the add icon in the upper right corner of the application.
 
 When a new note is created, it will generate on the far left pane of the application with the list on notes. To see what was written in previous notes, simply click on the note itself. Lastly, to delete a specific note within the application, click the red garbage can icon. When the user clicks on the "Note Taker" text in the upper left corner of the application, it will take them to the "Get Started" home page.
 
-## Technology used
+## Technology
 
 * JavaScript
 * Node.js
