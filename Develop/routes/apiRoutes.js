@@ -13,6 +13,7 @@ const writeFile = data => {return writeFileAsync('./Develop/db/db.json', JSON.st
     router.get('/notes', (req, res) => {
                
         getNotes().then((notes) => {
+            
             return res.json(notes);
         })
         .catch((err) => res.status(500).json(err));
